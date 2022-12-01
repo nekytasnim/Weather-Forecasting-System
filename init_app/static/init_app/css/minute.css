@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;  
+}
+body{
+    justify-content: center;
+    background: url('/static/init_app/images/pexels-ravi-kant-1715161.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px;
+    width: 1000px;
+    background-color: #32C1DEb0;
+    border-radius: 10px;
+    border-bottom: solid #ffffffa0;
+    height: 80px;
+    margin: auto;
+}
+/* .time, .date{
+    position: relative;
+    left: 10px;
+} */
+.forecast{
+    position: relative;
+    float: right;
+}
+#check{
+    display: none;
+}

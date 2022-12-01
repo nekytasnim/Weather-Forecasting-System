@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;  
+}
+body{
+    background: url('/static/init_app/images/pexels-marta-wave-5876433.jpg');
+    background-size: cover;
+    background-position: center;
+}
+div{
+    margin: auto;
+    padding: 10px;
+    color: white;
+    width: 700px;
+    background-color:#a52a2aa0;
+    height: 120px;
+    border-bottom: 1px solid  #ffffffd0;
+    /* border-radius: 10px; */
+}
+.past_hr{
+    position: relative;
+    float: right;
+}
+section{
+    padding: 0;
+    position: relative;
+    width: 500px;
+}
+.description{
+    position: absolute;
+    left: 200px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.curr_air_quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid #ffffffa0;
+    border-radius: 10px;
+}
+.heading{
+    height: auto;
+    border-bottom: 1px solid #ffffffa0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#last{
+    border-bottom: solid  #ffffffd0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

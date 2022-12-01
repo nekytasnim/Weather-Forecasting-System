@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
+body,html{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+body{
+    background: palegoldenrod;
+
+}
+/*head section start*/
+.health{
+    color:black;
+    margin-top: 62px;
+    margin-left: 40px;
+    font-size: 2em;
+}
+.content{
+    position: absolute;
+    margin-top: auto;
+    display:flex;
+    flex-direction: row;
+}
+.content .widget{
+    width: 200px;
+    height: 150px;
+    margin-top: 35px;
+    margin-left: 40px;
+    border-radius: 10px;
+    background:rgba(15,163,155,0.5);
+}
+.content .widget .icon{
+    width: 12%;
+    margin-bottom: -10px;
+    padding-top: 18px;
+    display: block;
+    margin-left:20px;
+    margin-right: auto;
+}
+
+.content .widget .d{
+    margin-left:20px;
+    margin-right: auto;
+    margin-bottom: -25px;
+    
+}
+.content .widget .line{
+    width: 15%;
+    height: 2px;
+    border: 0 none;
+    margin-left:20px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    background-color: black;
+}
+.content .widget .h{
+    margin-left:20px;
+    margin-right: auto;
+}
+/*head section end*/
+/*Tooltip section*/
+.tooltip{
+    position:relative;
+    
+}
+.tooltip .tooltiptop{
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position:absolute;
+    z-index: 1;
+    bottom: 85%;
+    left: 30%;
+    margin-left: -60px;
+    /* make fade in*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip:hover .tooltiptop{
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .tooltiptop::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left:10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/*Tooltip section end*/
+
+
+
+/* Outdoor section*/
+.out{
+    color:black;
+    margin-top: 270px;
+    margin-left: 40px;
+    font-size: 2em;
+}
+.content-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-1 .widget{
+    width: 200px;
+    height: 150px;
+    margin-left:40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: rgba(15,163,155,0.5);
+} 
+.content-1 .widget .icon{
+    width: 12%;
+    margin-bottom: -10px;
+    padding-top: 18px;
+    display: block;
+    margin-left:20px;
+    margin-right: auto;
+}
+.content-1 .widget .d{
+    margin-left:20px;
+    margin-right: auto;
+    margin-bottom: -25px;
+    
+}
+.content-1 .widget .line{
+    width: 15%;
+    height: 2px;
+    border: 0 none;
+    margin-left:20px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    background-color: black;
+}
+.content-1 .widget .h{
+    margin-left:20px;
+    margin-right: auto;
+}
+/* Outdoor section end*/
+/* Traval section start*/
+.traval{
+    color:black;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 2em;
+}
+.content-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-2 .widget{
+    width: 200px;
+    height: 150px;
+    margin-left:40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: rgba(15,163,155,0.5);
+} 
+.content-2 .widget .icon{
+    width: 15%;
+    margin-bottom: -10px;
+    padding-top: 18px;
+    display: block;
+    margin-left:20px;
+    margin-right: auto;
+}
+.content-2 .widget .d{
+    margin-left:20px;
+    margin-right: auto;
+    margin-bottom: -25px;
+}
+.content-2 .widget .line{
+    width: 15%;
+    height: 2px;
+    border: 0 none;
+    margin-left:20px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    background-color: black;
+}
+.content-2 .widget .h{
+    margin-left:20px;
+    margin-right: auto;
+}
+/*Traval section end*/
+ /*Home section start*/
+.home{
+    color:black;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 2em;
+}
+.content-3{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-3 .widget{
+    width: 200px;
+    height: 150px;
+    margin-left:40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: rgba(15,163,155,0.5);
+} 
+.content-3 .widget .icon{
+    width: 12%;
+    margin-bottom: -10px;
+    padding-top: 18px;
+    display: block;
+    margin-left:20px;
+    margin-right: auto;
+}
+.content-3 .widget .d{
+    margin-left:20px;
+    margin-right: auto;
+    margin-bottom: -25px;
+}
+.content-3 .widget .line{
+    width: 15%;
+    height: 2px;
+    border: 0 none;
+    margin-left:20px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    background-color: black;
+}
+.content-3 .widget .h{
+    margin-left:20px;
+    margin-right: auto;
+}
+ /*Home section end*/
+
+ /*Pest section start*/
+.pest{
+    color:black;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 2em;
+}
+.content-4{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-4 .widget{
+    width: 200px;
+    height: 150px;
+    margin-left:40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: rgba(15,163,155,0.5);
+} 
+.content-4 .widget .icon{
+    width: 12%;
+    margin-bottom: -10px;
+    padding-top: 18px;
+    display: block;
+    margin-left:20px;
+    margin-right: auto;
+}
+.content-4 .widget .d{
+    margin-left:20px;
+    margin-right: auto;
+    margin-bottom: -25px;
+}
+.content-4 .widget .line{
+    width: 15%;
+    height: 2px;
+    border: 0 none;
+    margin-left:20px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    background-color: black;
+}
+.content-4 .widget .h{
+    margin-left:20px;
+    margin-right: auto;
+}
+ /*Pest section end*/
+/*Allergy section start*/
+.allergy{
+    color:black;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 2em;
+}
+.content-5{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-5 .widget{
+    width: 200px;
+    height: 150px;
+    margin-left:40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: rgba(15,163,155,0.5);
+} 
+.content-5 .widget .icon{
+    width: 12%;
+    margin-bottom: -10px;
+    padding-top: 18px;
+    display: block;
+    margin-left:20px;
+    margin-right: auto;
+}
+.content-5 .widget .d{
+    margin-left:20px;
+    margin-right: auto;
+    margin-bottom: -25px;
+}
+.content-5 .widget .line{
+    width: 15%;
+    height: 2px;
+    border: 0 none;
+    margin-left:20px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    background-color: black;
+}
+.content-5 .widget .h{
+    margin-left:20px;
+    margin-right: auto;
+}
+/*Allergy section end*/

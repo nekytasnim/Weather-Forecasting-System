@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+   background-image: url("/static/init_app/images/pexels-marko-klaric-6159300.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.Curr_weather{
+    position: relative;
+}
+.Day{
+    position: relative;
+    top: 10px;
+} 
+.Night{
+    position: relative;
+    top: 20px;
+}
+.Curr_weather, .Day, .Night{
+    background: #2F4F4Fc0;
+    color: white;
+    padding: 1.5em;
+    border-radius: 30px;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    /* padding: 10px; */
+    /* display: flex; */
+    /* justify-content: center;  */
+    line-height: 30px;
+}
+div {
+    display: flex;
+}
+  
+section {
+    flex: 50%;
+}
+.right{
+    position: absolute;
+    right: 1.5em;
+}
+img{
+    height: 40px;
+    width: 40px;
+}
+

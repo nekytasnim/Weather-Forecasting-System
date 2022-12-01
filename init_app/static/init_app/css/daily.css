@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
+body,html{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url('/static/init_app/images/pexels-johannes-plenio-1118869.jpg');
+}
+.daily{
+    margin: 100px auto;
+    margin-top: 55px;
+    width: 600px;
+
+}
+.daily li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(122, 155, 163, 0.75);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.daily li .widget{
+    width: 600px;
+    height: 95px;
+    background:none;
+}
+.daily li .widget .top-corner{
+    width: 200px;
+    color: white;
+    margin-left: 10px;
+}
+.daily li .widget .top-corner .day{
+    font-weight: bold;
+    margin-top: -0.1px;
+    margin-bottom: -0.5px;
+}
+.daily li .widget .top-corner .date{
+    margin: 0;
+    font-weight: 500;
+}
+
+.daily li .widget .left{
+      width: 400px;
+      color: white;
+}
+.daily li .widget .left .icon{
+      width: 25%;
+      margin-top: -60px;
+      display: block;
+      margin-left: 55px;
+      margin-bottom: -18px;
+}
+.daily li .widget .left .weather-status{
+    width: 150%;
+    margin-top: auto;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.daily li .widget .weather-temp{
+    color:white;
+}
+
+.daily li .widget .weather-temp .max{
+    margin-top: -100px;
+    margin-left: 400px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.daily li .widget .weather-temp .min{
+    margin-top: -85px;
+    margin-left: 500px;
+    font-size: 1em;
+    font-weight:500;
+}
