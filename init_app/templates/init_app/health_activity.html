@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Health & Activities</title>
+    <!--Style css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'init_app/css/health.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h2 class="health">Health</h2>
+    <!--Health section start-->
+    <div class="content">
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/hospital.png" class="icon" />
+          <h4 class="d">Arthritis</h4>
+          <hr class="line" />
+          <h4 class="h">{{arthritis}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{arthritis_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/pain.png" class="icon" />
+          <h4 class="d">Sinus Pressure</h4>
+          <hr class="line" />
+          <h4 class="h">{{sinus}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{sinus_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/tissue-box.png" class="icon" />
+          <h4 class="d">Common Cold</h4>
+          <hr class="line" />
+          <h4 class="h">{{cold}}</h4>
+        </div>
+        <span class="tooltiptop">{{cold_text}}</span>
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/pills.png" class="icon" />
+          <h4 class="d">Flu</h4>
+          <hr class="line" />
+          <h4 class="h">{{flu}}</h4>
+        </div>
+        <span class="tooltiptop">{{flu_text}}</span>
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/migraine.png" class="icon" />
+          <h4 class="d">Migraine</h4>
+          <hr class="line" />
+          <h4 class="h">{{migraine}}</h4>
+        </div>
+        <span class="tooltiptop">{{migraine_text}}</span>
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/lungs.png" class="icon" />
+          <h4 class="d">Asthma</h4>
+          <hr class="line" />
+          <h4 class="h">{{asthma}}</h4>
+        </div>
+        <span class="tooltiptop">{{asthma_text}}</span>
+      </div>
+    </div>
+    <!--Health section end-->
+    <!--Outdoor section-->
+    <h2 class="out">Outdoor Activities</h2>
+    <div class="content-1">
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/fish.png" class="icon" />
+          <h4 class="d">Fishing</h4>
+          <hr class="line" />
+          <h4 class="h">{{fishing}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{fishing_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/sneakers.png" class="icon" />
+          <h4 class="d">Running</h4>
+          <hr class="line" />
+          <h4 class="h">{{running}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{running_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/golf-field.png" class="icon" />
+          <h4 class="d">Golf</h4>
+          <hr class="line" />
+          <h4 class="h">{{golf}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{golf_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/track-bicycle.png" class="icon" />
+          <h4 class="d">Biking & Cycling</h4>
+          <hr class="line" />
+          <h4 class="h">{{biking}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{biking_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/sunglasses.png" class="icon" />
+          <h4 class="d">Beach & Pool</h4>
+          <hr class="line" />
+          <h4 class="h">{{beach}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{beach_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/saturn.png" class="icon" />
+          <h4 class="d">Stargazing</h4>
+          <hr class="line" />
+          <h4 class="h">{{stargazing}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{stargazing_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/sneakers (1).png" class="icon" />
+          <h4 class="d">Hiking</h4>
+          <hr class="line" />
+          <h4 class="h">{{hiking}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{hiking}}</span
+        >
+      </div>
+    </div>
+    <!--Outdoor section end-->
+    <!--Traval section start-->
+    <h2 class="traval">Travel & Commute</h2>
+    <div class="content-2">
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/airplane.png" class="icon" />
+          <h4 class="d">Air Travel</h4>
+          <hr class="line" />
+          <h4 class="h">{{flying}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >Y{{flying_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/sedan.png" class="icon" />
+          <h4 class="d">Driving</h4>
+          <hr class="line" />
+          <h4 class="h">{{driving}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{driving_text}}</span
+        >
+      </div>
+    </div>
+    <!--Traval section end-->
+    <!--Home section start-->
+    <h2 class="home">Home & Garden</h2>
+    <div class="content-3">
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/lawn-mower.png" class="icon" />
+          <h4 class="d">Lawn Mowing</h4>
+          <hr class="line" />
+          <h4 class="h">{{lawn_mowing}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{lawn_mowing_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/lawn-mower.png" class="icon" />
+          <h4 class="d">Composting</h4>
+          <hr class="line" />
+          <h4 class="h">{{composting}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{composting_text}}</span
+        >
+      </div>
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/glass-and-bottle-of-wine.png" class="icon" />
+          <h4 class="d">Outdoor Entertaining</h4>
+          <hr class="line" />
+          <h4 class="h">{{outdoor}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{outdoor_text}}</span
+        >
+      </div>
+    </div>
+    <!--Home section end-->
+    <!--pest section start-->
+    <h2 class="pest">Pests</h2>
+    <div class="content-4">
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/mosquito.png" class="icon" />
+          <h4 class="d">Mosquitos</h4>
+          <hr class="line" />
+          <h4 class="h">{{mosquito}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{mosquito_text}}</span
+        >
+      </div>
+    </div>
+    <!--Pest section end-->
+    <!--allergy section start-->
+    <h2 class="allergy">Alergies</h2>
+    <div class="content-5">
+      <div class="tooltip">
+        <div class="widget">
+          <img src="static/init_app/images/dust.png" class="icon" />
+          <h4 class="d">Dust & Dander</h4>
+          <hr class="line" />
+          <h4 class="h">{{dust}}</h4>
+        </div>
+        <span class="tooltiptop"
+          >{{dust_text}}</span
+        >
+      </div>
+    </div>
+    <!--allergy section end-->
+  </body>
+</html>

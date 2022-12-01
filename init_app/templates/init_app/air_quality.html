@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality</title>
+    <link rel="stylesheet" href="{% static 'init_app/css/air.css' %}">
+</head>
+<body>
+    <div class="curr_air_quality">
+        <H1>Air Quality Index: {{aqi}}</H1>
+    </div>
+    <div class="heading">Current Pollutants
+        <span class="past_hr">Over the past hour</span>
+    </div>
+    <div>
+        <b class="past_hr"> {{co}} µg/m³</b></span>
+        <section>
+            <b>CO</b>
+            <span class="description">Carbon Monoxide is a colorless and odorless gas and when inhaled at high
+      levels can cause headache, nausea, dizziness, and vomiting. Repeated
+      long-term exposure can lead to heart disease</span>
+        </section>
+    </div>
+    <div>
+        <b class="past_hr"> {{no}} µg/m³</b></span>
+        <section>
+            <b>NO</b>
+            <span class="description">In ambient conditions, nitric oxide is rapidly oxidized in air to form
+      nitrogen dioxide by available oxidants and this rapid oxidation velocity is such that it is nitrogen dioxide that
+      is usually considered as a primary pollutant.</span>
+        </section>
+    </div>
+    <div>
+        <b class="past_hr"> {{no2}} µg/m³</b></span>
+        <section>
+            <b>NO<sub>2</sub></b>
+            <span class="description">Breathing in high levels of Nitrogen Dioxide increases the risk of
+      respiratory problems. Coughing and difficulty breathing are common and
+      more serious health issues such as respiratory infections can occur with
+      longer exposure.</span>
+        </section>
+    </div>
+    <div>
+        <b class="past_hr"> {{o3}} µg/m³</b></span>
+        <section>
+            <b>O<sub>3</sub></b>
+            <span class="description">Ground-level Ozone can aggravate existing respiratory diseases and also
+      lead to throat irritation, headaches, and chest pain.</span>
+        </section>
+    </div>
+    <div>
+        <b class="past_hr"> {{so2}} µg/m³</b></span>
+        <section>
+            <b>SO<sub>2</sub></b>
+            <span class="description">Exposure to Sulfur Dioxide can lead to throat and eye irritation and
+      aggravate asthma as well as chronic bronchitis.</span>
+        </section>
+    </div>
+    <div>
+        <b class="past_hr"> {{pm2_5}} µg/m³</b></span>
+        <section>
+            <b>PM<sub>2.5</sub></b>
+            <span class="description">Fine Particulate Matter are inhalable pollutant particles with a diameter
+      less than 2.5 micrometers that can enter the lungs and bloodstream,
+      resulting in serious health issues. The most severe impacts are on the
+      lungs and heart.</span>
+        </section>
+    </div>
+    <div>
+        <b class="past_hr"> {{pm10}} µg/m³</b></span>
+        <section>
+            <b>PM<sub>10</sub></b>
+            <span class="description">Particulate Matter are inhalable pollutant particles with a diameter less
+      than 10 micrometers. Exposure can result in
+      eye and throat irritation, coughing or difficulty breathing, and
+      aggravated asthma.</span>
+        </section>
+    </div>
+    <div id="last">
+        <b class="past_hr"> {{nh3}} µg/m³</b></span>
+        <section>
+            <b>NH<sub>3</sub></b>
+            <span class="description">Ammonia plays a significant role in the formation of atmospheric
+      particulate matter, visibility degradation and atmospheric deposition of
+      nitrogen to sensitive ecosystems.</span>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'init_app/css/today.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Today</title>
+</head>
+<body>
+    <div class="Curr_weather">
+        <section class="left">
+            <h3 >CURRENT WEATHER</h3>
+            <h6>{{time}}</h6>
+            <div class="temparature">
+                <img src="static/init_app/images/{{icon}}.png" alt="">
+                <h1>{{temperature}} °C</h1>
+            </div>
+            <div class="sky">{{description}}</div>
+            <div class="wind">Wind:  {{wind}} km/h</div>
+            <div class="wind gusts">Wind Gusts: {{wind_gust}} km/h</div>
+            <div class="humidity">{{humidity}}%</div>
+            <div class="indoor_humid">Indoor Humidity: {{indoor_humidity}}% (Dangerously Humid)</div>
+            <div class="dew_point">Air Quality: {{air_quality}}</div>
+        </section>
+        <section class="right">
+            <div class="pressure">Pressure: {{pressure}} mb</div>
+            <div>Cloud Cover: {{cloud_cover}}%</div>
+            <div>Visibility: {{visibility}}km</div>
+            <div>Cloud Ceiling: {{ceiling}} m</div>
+        </section>
+    </div>
+    <div class="Day">
+        <section class="left">
+            <h6 class="heading">DAY</h6>
+            <div class="temparature">
+                <img src="static/init_app/images/{{day_icon}}.png" alt="">
+            </div>
+            <div class="sky">{{icon_text}}</div>
+            <div class="wind">Wind: {{day_wind_direction}} {{day_wind}} km/h</div>
+            <div class="wind gusts">Wind Gusts: {{day_wind_gust_direction}} {{day_wind_gust}} km/h</div>
+            <div class="prec_probabilty">Probability of Precipitation: {{day_precipitation}}%</div>
+            <div class="thund_probabilty">Probability of thunderstorm: {{day_thunderstorm}}%</div>
+
+        </section>
+        <section class="right">
+            <div class="rain">Rain: {{day_rain}}mm</div>
+            <div class="prec_hours">Hours of Precipitation: {{day_hours_precipitation}}</div>
+            <div class="rain_hours">Hours of Rain: {{day_hours_rain}}</div>
+            <div class="cloud_cov">Cloud Cover: {{day_cloud_cover}}%</div>
+        </section>
+    </div>
+    <div class="Night">
+        <section class="left">
+            <h6 class="heading">NIGHT</h6>
+            <div class="temparature">
+                <img src="static/init_app/images/{{night_icon}}.png" alt="">
+            </div>
+            <div class="sky">{{night_icon_text}}</div>
+            <div class="wind">Wind: {{night_wind_direction}} {{night_wind}} km/h</div>
+            <div class="wind gusts">Wind Gusts: {{night_wind_gust_direction}} {{night_wind_gust}} km/h</div>
+            <div class="prec_probabilty">Probability of Precipitation: {{night_precipitation}}%</div>
+            <div class="thund_probabilty">Probability of thunderstorm: {{night_thunderstorm}}%</div>
+        </section>
+        <section class="right">
+            <div class="rain">Rain: {{night_rain}}mm</div>
+            <div class="prec_hours">Hours of Precipitation: {{night_hours_precipitation}}</div>
+            <div class="rain_hours">Hours of Rain: {{night_hours_rain}}</div>
+            <div class="cloud_cov">Cloud Cover: {{night_cloud_cover}}%</div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Daily</title>
+    <!--Style css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'init_app/css/daily.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="daily">
+      <!--Box-1 start-->
+      <li>
+        <div class="widget">
+          <div class="top-corner">
+            <h4 class="day">{{day1_week}}</h4>
+            <h5 class="date">{{day1_date}}</h5>
+          </div>
+          <div class="left">
+            <img src="static/init_app/images/{{icon1}}.png" class="icon" /><br>
+            <h5 class="weather-status">{{phrase1}}</h5>
+          </div>
+          <div class="weather-temp">
+            <h4 class="max">{{max_temp1}}&#176;C</h4>
+            <h5 class="min">/ {{min_temp1}}&#176;C</h5>
+          </div>
+        </div>
+      </li>
+      <!--Box-1 End-->
+
+      <!--Box-2 start-->
+      <li>
+        <div class="widget">
+          <div class="top-corner">
+            <h4 class="day">{{day2_week}}</h4>
+            <h5 class="date">{{day2_date}}</h5>
+          </div>
+          <div class="left">
+            <img src="static/init_app/images/{{icon2}}.png" class="icon" /><br>
+            <h5 class="weather-status">{{phrase2}}</h5>
+          </div>
+          <div class="weather-temp">
+            <h4 class="max">{{max_temp2}}&#176;C</h4>
+            <h5 class="min">/ {{min_temp2}}&#176;C</h5>
+          </div>
+        </div>
+      </li>
+      <!--Box-2 End-->
+      <!--Box-3 start-->
+      <li>
+        <div class="widget">
+          <div class="top-corner">
+            <h4 class="day">{{day3_week}}</h4>
+            <h5 class="date">{{day3_week}}</h5>
+          </div>
+          <div class="left">
+            <img src="static/init_app/images/{{icon3}}.png" class="icon" /><br>
+            <h5 class="weather-status">
+              {{phrase3}}
+            </h5>
+          </div>
+          <div class="weather-temp">
+            <h4 class="max">{{max_temp3}}&#176;C</h4>
+            <h5 class="min">/ {{min_temp3}}&#176;C</h5>
+          </div>
+        </div>
+      </li>
+      <!--Box-3 End-->
+      <!--Box-4 start-->
+      <li>
+        <div class="widget">
+          <div class="top-corner">
+            <h4 class="day">{{day4_week}}</h4>
+            <h5 class="date">{{day4_date}}</h5>
+          </div>
+          <div class="left">
+            <img src="static/init_app/images/{{icon4}}.png" class="icon" /><br>
+            <h5 class="weather-status">{{phrase4}}</h5>
+          </div>
+          <div class="weather-temp">
+            <h4 class="max">{{max_temp4}}&#176;C</h4>
+            <h5 class="min">/ {{min_temp4}}&#176;C</h5>
+          </div>
+        </div>
+      </li>
+      <!--Box-4 End-->
+      <!--Box-5 start-->
+      <li>
+        <div class="widget">
+          <div class="top-corner">
+            <h4 class="day">{{day5_week}}</h4>
+            <h5 class="date">{{day5_date}}</h5>
+          </div>
+          <div class="left">
+            <img src="static/init_app/images/{{icon5}}.png" class="icon" /><br>
+            <h5 class="weather-status">{{phrase5}}</h5>
+          </div>
+          <div class="weather-temp">
+            <h4 class="max">{{max_temp5}}&#176;C</h4>
+            <h5 class="min">/ {{min_temp5}}&#176;C</h5>
+          </div>
+        </div>
+      </li>
+      <!--Box-5 End-->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Hourly</title>
+    <!--Style css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'init_app/css/hourly.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="accordion">
+      <!--Box-1 start-->
+      <li>
+        <label for="first"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon1}}.png" class="icon" /> <br>
+              <h4 class="weather-time">
+                <div>{{time1}}, <span>{{temperature1}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase1}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature1}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="first" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind1}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover1}}%</span></div>
+            <div>Dew point <span>{{dew_point1}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility1}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust1}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling1}} m</span></div>
+            <div>Humidity <span>{{humidity1}}%</span></div>
+            <div>Rain <span>{{rain1}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity1}}%</span></div>
+            <div>UV Index <span> {{uv_1}}{{uv_text1}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-1 End-->
+      <!--Box-2 start-->
+      <li>
+        <label for="second"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon2}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time2}} , <span>{{temperature2}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase2}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature2}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="second" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind2}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover2}}%</span></div>
+            <div>Dew point <span>{{dew_point2}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility2}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust2}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling2}} m</span></div>
+            <div>Humidity <span>{{humidity2}}%</span></div>
+            <div>Rain <span>{{rain2}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity2}}%</span></div>
+            <div>UV Index <span> {{uv2}}{{uv_text2}}</span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-2 End-->
+      <!--Box-3 start-->
+      <li>
+        <label for="third"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon3}}.png" class="icon" /> <br>
+              <h4 class="weather-time">
+                <div>{{time3}}, <span>{{temperature3}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase3}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature3}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="third" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind3}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover3}}%</span></div>
+            <div>Dew point <span>{{dew_point3}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility3}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust3}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling3}} m</span></div>
+            <div>Humidity <span>{{humidity3}}%</span></div>
+            <div>Rain <span>{{rain3}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity3}}%</span></div>
+            <div>UV Index <span> {{uv3}} {{uv_text3}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-3 End-->
+      <!--Box-4 start-->
+      <li>
+        <label for="fourth"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon4}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time4}}, <span>{{temperature4}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase4}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature4}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="fourth" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind4}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover4}}%</span></div>
+            <div>Dew point <span>{{dew_point4}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility4}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust4}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling4}} m</span></div>
+            <div>Humidity <span>{{humidity4}}%</span></div>
+            <div>Rain <span>{{rain4}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity4}}%</span></div>
+            <div>UV Index <span> {{uv4}} {{uv_text4}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-4 End-->
+      <!--Box-5 start-->
+      <li>
+        <label for="fifth"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon5}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time5}}, <span>{{temperature5}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase5}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature5}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="fifth" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind5}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover5}}%</span></div>
+            <div>Dew point <span>{{dew_point5}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility5}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust5}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling5}} m</span></div>
+            <div>Humidity <span>{{humidity5}}%</span></div>
+            <div>Rain <span>{{rain5}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity5}}%</span></div>
+            <div>UV Index <span> {{uv_text5}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-5 End-->
+      <!--Box-6 start-->
+      <li>
+        <label for="sixth"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon6}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time6}}, <span>{{temperature6}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase6}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature6}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="sixth" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind6}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover6}}%</span></div>
+            <div>Dew point <span>{{dew_point6}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility6}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust6}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling6}} m</span></div>
+            <div>Humidity <span>{{humidity6}}%</span></div>
+            <div>Rain <span>{{rain6}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity6}}%</span></div>
+            <div>UV Index <span> {{uv_text6}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-6 End-->
+      <!--Box-7 start-->
+      <li>
+        <label for="seventh"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon7}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time7}}, <span>{{temperature7}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase7}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature7}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="seventh" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind7}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover7}}%</span></div>
+            <div>Dew point <span>{{dew_point7}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility7}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust7}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling7}} m</span></div>
+            <div>Humidity <span>{{humidity7}}%</span></div>
+            <div>Rain <span>{{rain7}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity7}}%</span></div>
+            <div>UV Index <span> {{uv_text7}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-7 End-->
+      <!--Box-8 start-->
+      <li>
+        <label for="eighth"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon8}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time8}}, <span>{{temperature8}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase8}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature8}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="eighth" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind8}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover8}}%</span></div>
+            <div>Dew point <span>{{dew_point8}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility8}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust8}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling8}} m</span></div>
+            <div>Humidity <span>{{humidity8}}%</span></div>
+            <div>Rain <span>{{rain8}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity8}}%</span></div>
+            <div>UV Index <span> {{uv_text8}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-8 End-->
+      <!--Box-9 start-->
+      <li>
+        <label for="nineth"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon9}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time9}}, <span>{{temperature9}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase9}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature9}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="nineth" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind9}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover9}}%</span></div>
+            <div>Dew point <span>{{dew_point9}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility9}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust9}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling9}} m</span></div>
+            <div>Humidity <span>{{humidity9}}%</span></div>
+            <div>Rain <span>{{rain9}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity9}}%</span></div>
+            <div>UV Index <span> {{uv_text9}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-9 End-->
+      <!--Box-10 start-->
+      <li>
+        <label for="tenth"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon10}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time10}}, <span>{{temperature10}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase10}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature10}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="tenth" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind10}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover10}}%</span></div>
+            <div>Dew point <span>{{dew_point10}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility10}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust10}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling10}} m</span></div>
+            <div>Humidity <span>{{humidity10}}%</span></div>
+            <div>Rain <span>{{rain10}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity10}}%</span></div>
+            <div>UV Index <span> {{uv_text10}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-10 End-->
+      <!--Box-11 start-->
+      <li>
+        <label for="eleventh"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon11}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time11}}, <span>{{temperature11}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase11}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature11}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="eleventh" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind11}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover11}}%</span></div>
+            <div>Dew point <span>{{dew_point11}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility11}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust11}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling11}} m</span></div>
+            <div>Humidity <span>{{humidity11}}%</span></div>
+            <div>Rain <span>{{rain11}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity11}}%</span></div>
+            <div>UV Index <span> {{uv_text11}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-11 End-->
+      <!--Box-12 start-->
+      <li>
+        <label for="twelveth"
+          ><div class="widget">
+            <div class="left">
+              <img src="static/init_app/images/{{icon12}}.png" class="icon" /><br>
+              <h4 class="weather-time">
+                <div>{{time12}}, <span>{{temperature12}}&#176;C</span></div>
+              </h4>
+              <h5 class="weather-status">{{icon_phrase12}}</h5>
+            </div>
+            <div class="right">
+              <h5 class="real">Real Feel</h5>
+              <h5 class="degree">{{real_temperature12}}&#176;C</h5>
+            </div>
+          </div>
+          <span>&#x3e;</span></label
+        >
+        <input type="checkbox" name="accordion" id="twelveth" />
+        <div class="content">
+          <div class="sec-1">
+            <div>Wind Speed <span>{{wind12}} kmph</span></div>
+            <div>Cloud Cover <span>{{cloud_cover12}}%</span></div>
+            <div>Dew point <span>{{dew_point12}}&#176;C</span></div>
+            <div>Visibility <span>{{visibility12}} km</span></div>
+          </div>
+          <div class="sec-2">
+            <div>Wind Gusts <span>{{wind_gust12}} kmph</span></div>
+            <div>Cloud Ceiling <span>{{cloud_ceiling12}} m</span></div>
+            <div>Humidity <span>{{humidity12}}%</span></div>
+            <div>Rain <span>{{rain12}} mm</span></div>
+          </div>
+          <div class="sec-3">
+            <div>Indoor Humidity <span>{{indoor_humidity12}}%</span></div>
+            <div>UV Index <span> {{uv_text12}} </span></div>
+          </div>
+        </div>
+      </li>
+      <!--Box-12 End-->
+    </div>
+  </body>
+</html>
